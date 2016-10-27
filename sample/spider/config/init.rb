@@ -7,6 +7,7 @@ DaimonSkycrawlers.configure do |config|
   config.logger.level = ::Logger::DEBUG
   config.crawler_interval = 1
   config.shutdown_interval = 30
+  config.queue_name_prefix = "blog-spider"
 end
 
 DaimonSkycrawlers::Queue.configure do |config|

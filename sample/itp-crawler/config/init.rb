@@ -7,6 +7,7 @@ DaimonSkycrawlers.configure do |config|
   config.logger = DaimonSkycrawlers::Logger.default
   config.crawler_interval = 1
   config.shutdown_interval = 30
+  config.queue_name_prefix = "itp-crawler"
 end
 
 DaimonSkycrawlers::Queue.configure do |config|
